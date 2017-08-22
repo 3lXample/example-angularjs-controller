@@ -1,0 +1,47 @@
+/**
+ * example-angularjs-controller
+ * https://github.com/3lXample/example-angularjs-controller
+ *
+ * Copyright (c) 2017 3lXample (https://github.com/3lXample)
+ * Licensed under the MIT license
+ */
+body {
+  width         : 650px;
+  margin        : 0 auto;
+  border-top    : 4px solid #007fc7;
+  border-bottom : 4px solid #007fc7;
+}
+body > header {
+  color         : #99bf6b;
+  padding       : 30px 15px 15px;
+  margin        : 5px 0;
+}
+body > header h1 {
+  margin        : 0;
+  line-height   : 0.75;
+}
+body > nav {
+  margin        : 5px 0;
+}
+body > nav ul.nav li.nav-item:first-child {
+  margin-left   : 15px;
+}
+body > nav ul.nav li.nav-item:last-child {
+  margin-right  : 15px;
+}
+body > main {
+  padding       : 20px 15px 10px;
+  margin        : 5px 0;
+}
+body > footer {
+  background    : #c8e4a0;
+  border-radius : 2.5px;
+  padding       : 10px 15px;
+  margin        : 5px 0;
+}
+body > footer p {
+  font-size     : 12px;
+  font-style    : italic;
+  text-align    : right;
+  margin        : 0;
+}

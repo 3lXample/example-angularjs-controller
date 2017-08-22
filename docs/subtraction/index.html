@@ -1,0 +1,123 @@
+<!--
+ * example-angularjs-controller
+ * https://github.com/3lXample/example-angularjs-controller
+ *
+ * Copyright (c) 2017 3lXample (https://github.com/3lXample)
+ * Licensed under the MIT license
+ -->
+<!DOCTYPE html>
+<html lang="en" ng-app="3XApp" ng-strict-di>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>3lXample - Example AngularJS Web [Controller]</title>
+  <meta name="description" content="An example of web made with AngularJS controller and NodeJS">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+  <!-- Bootstrap CSS -->
+  <link href="../_vendor/bootstrap.min.css" rel="stylesheet">
+  <!-- App CSS -->
+  <link href="../_app/style.css" rel="stylesheet">
+  <!-- Page CSS -->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- AngularJS JS -->
+  <script src="../_vendor/angular.min.js"></script>
+  <!-- App JS -->
+  <script src="../_app/module.js"></script>
+  <script src="../_app/config.js"></script>
+  <script src="../_app/route.js"></script>
+  <script src="../_app/component.js"></script>
+  <script src="../_app/directive.js"></script>
+  <script src="../_app/controller.js"></script>
+  <script src="../_app/provider.js"></script>
+  <script src="../_app/filter.js"></script>
+  <!-- Page JS -->
+  <script src="controller.js"></script>
+</head>
+<body>
+  <header>
+    <div class="row">
+      <div class="col col-auto">
+        <img src="../_assets/3lXample_logo-160x44.png" width="160" height="44" alt="logo">
+      </div>
+      <div class="col">
+        <h1>Example AngularJS</h1>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <h2 class="sr-only">Navigation</h2>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="../">
+          <img src="../_assets/3lXample_icon-20x20.png" width="20" height="20" alt="home">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../pagination">Pagination</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../addition">Addition</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href=".">Subtraction</a>
+      </li>
+    </ul>
+  </nav>
+  <main ng-controller="subtractionController">
+    <section>
+      <h2>Subtraction Example [Controller]</h2>
+      <nav aria-label="Subtraction Example Navigation">
+        <h3 class="sr-only">Subtraction Example Navigation</h3>
+        <div class="row">
+          <div class="col">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="" ng-click="subFirst()">Sub First</a></li>
+              <li class="page-item"><a class="page-link" href="" ng-click="subLast()">Sub Last</a></li>
+              <li class="page-item"><a class="page-link" href="" ng-click="subRandom()">Sub Random</a></li>
+            </ul>
+          </div>
+          <div class="col col-auto">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link">Count : {{count}}</a></li>
+              <li class="page-item"><a class="page-link" href="" ng-click="reset()">Reset</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <article>
+        <h3 class="sr-only">Subtraction Example Content</h3>
+        <table class="table table-sm table-bordered table-hover">
+          <thead class="thead-inverse">
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Phone</th>
+              <th>Date of Birth</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="user in users track by user.id">
+              <td>{{user.firstName}}</td>
+              <td>{{user.lastName}}</td>
+              <td>{{user.phone}}</td>
+              <td>{{user.dob | date:'dd-MMM-yyyy'}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright (c) 2017 3lXample (https://github.com/3lXample)</p>
+    <p>Designed and built by Anisetus Elly Efendi</p>
+  </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="../_vendor/jquery.slim.min.js"></script>
+  <script src="../_vendor/popper.min.js"></script>
+  <script src="../_vendor/bootstrap.min.js"></script>
+</body>
+</html>
